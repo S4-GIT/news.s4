@@ -1,0 +1,173 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e fonte global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+/* Seção de destaque */
+.highlight {
+    background-color: #444;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.highlight-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.highlight-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.highlight-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0066cc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Seção de notícias */
+.news {
+    padding: 20px;
+}
+
+.news h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Lista de notícias */
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Notícia individual */
+.news-item {
+    width: 30%;  /* Largura padrão para desktop */
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-content {
+    padding: 20px;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.news-content p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0066cc;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #005bb5;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #f5f5f5;
+    margin-top: 30px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .news-list {
+        flex-direction: column;  /* Fazendo as notícias ficarem em uma coluna */
+        align-items: center;     /* Centraliza as notícias */
+    }
+
+    .news-item {
+        width: 80%;  /* Ajusta a largura das notícias para 80% da tela em dispositivos móveis */
+        margin-bottom: 20px;  /* Adiciona um espaçamento entre as notícias */
+    }
+
+    .highlight-text h1 {
+        font-size: 24px;
+    }
+
+    .highlight-text p {
+        font-size: 16px;
+    }
+
+    .highlight-btn {
+        font-size: 16px;
+    }
+
+    .news-content h3 {
+        font-size: 18px;
+    }
+
+    .news-content p {
+        font-size: 14px;
+    }
+}
